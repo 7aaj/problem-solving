@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function sevenBoom(arr) {
   for (i = 0; i < arr.length; i++) {
     if (arr[i].toString().includes("7") === true) {
@@ -10,18 +9,4 @@ function sevenBoom(arr) {
   return "there is no 7 in the array";
 }
 
-console.log(sevenBoom([1, 2, 3, 4, 5, 67]));
-=======
-function sevenBoom(arr) {
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i].toString().includes("7") === true) {
-      return "Boom!";
-    } else {
-      continue;
-    }
-  }
-  return "there is no 7 in the array";
-}
-
-console.log(sevenBoom([1, 2, 3, 4, 5, 67]));
->>>>>>> 9f5c76cc431aad0c6bc213156df1e2e92431a4c0
+console.log(sevenBoom([1, 2, 3, 4, 5, 57, 0]));
