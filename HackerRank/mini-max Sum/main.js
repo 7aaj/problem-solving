@@ -1,13 +1,11 @@
 function miniMaxSum(arr) {
-  let result = 0;
+  let arrSum = 0;
   // loop to have the sum of the array numbers
   for (let i = 0; i < arr.length; i++) {
     // saving the array sum in a variable
-    result += arr[i];
+    arrSum += arr[i];
   }
-  return console.log(
-    `${result - Math.max(...arr)} ${result - Math.min(...arr)}`
-  );
+  console.log(`${arrSum - Math.max(...arr)} ${arrSum - Math.min(...arr)}`);
 }
 
 miniMaxSum([1, 2, 3, 4, 5]);

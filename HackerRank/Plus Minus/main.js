@@ -1,10 +1,10 @@
 function plusMinus(arr) {
-  let n = arr.length;
-  let positive = [];
-  let zero = [];
-  let negative = [];
+  const parameterLength = arr.length;
+  const positive = [];
+  const zero = [];
+  const negative = [];
   // loop for pushing the deferent values
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < parameterLength; i++) {
     if (arr[i] > 0) {
       positive.push(arr[i]);
     } else if (arr[i] == 0) {
@@ -14,11 +14,9 @@ function plusMinus(arr) {
     }
   }
   // the math for proportion of values
-  return (
-    console.log((positive.length / n).toFixed(6)),
-    console.log((negative.length / n).toFixed(6)),
-    console.log((zero.length / n).toFixed(6))
-  );
+  console.log((positive.length / parameterLength).toFixed(6)),
+    console.log((negative.length / parameterLength).toFixed(6)),
+    console.log((zero.length / parameterLength).toFixed(6));
 }
 
 plusMinus([-4, 3, -9, 0, 4, 1]);

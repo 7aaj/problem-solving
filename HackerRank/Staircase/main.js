@@ -1,12 +1,12 @@
 function staircase(n) {
-  let space = " ";
-  let hash = "#";
-  let j = 1;
+  const whiteSpace = " ";
+  const symbol = "#";
+  let numberOfSymbols = 1;
   // Decrement loop for whitespace Decrement
   for (let i = n - 1; i >= 0; i--) {
-    console.log(`${space.repeat(i)}${hash.repeat(j)}`);
-    // j Increment to increase the hash sign
-    j++;
+    console.log(`${whiteSpace.repeat(i)}${symbol.repeat(numberOfSymbols)}`);
+    // j Increment to increase the hash symbol
+    numberOfSymbols++;
   }
 }
 
