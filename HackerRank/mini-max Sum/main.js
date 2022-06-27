@@ -1,7 +1,8 @@
 function miniMaxSum(arr) {
   let result = 0;
+  // loop to have the sum of the array numbers
   for (let i = 0; i < arr.length; i++) {
-    arr[i] = +arr[i];
+    // saving the array sum in a variable
     result += arr[i];
   }
   return console.log(
