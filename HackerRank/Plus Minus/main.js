@@ -15,8 +15,8 @@ function plusMinus(arr) {
   }
   // the math for proportion of values
   console.log((positive.length / parameterLength).toFixed(6)),
-    console.log((negative.length / parameterLength).toFixed(6)),
-    console.log((zero.length / parameterLength).toFixed(6));
+  console.log((negative.length / parameterLength).toFixed(6)),
+  console.log((zero.length / parameterLength).toFixed(6));
 }
 
 plusMinus([-4, 3, -9, 0, 4, 1]);
